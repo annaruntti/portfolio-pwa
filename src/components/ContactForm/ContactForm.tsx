@@ -4,9 +4,9 @@ import "./ContactForm.scss";
 
 // EmailJS configuration
 const EMAILJS_CONFIG = {
-  publicKey: "7Pcl5G0klYfPa7mTE",
-  serviceId: "service_ut4bfp3",
-  templateId: "template_46xu2k2",
+  publicKey: process.env.REACT_APP_EMAILJS_PUBLIC_KEY || "7Pcl5G0klYfPa7mTE",
+  serviceId: process.env.REACT_APP_EMAILJS_SERVICE_ID || "service_ut4bfp3",
+  templateId: process.env.REACT_APP_EMAILJS_TEMPLATE_ID || "template_46xu2k2",
 };
 
 // Initialize emailjs with your public key

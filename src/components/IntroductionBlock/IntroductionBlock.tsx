@@ -9,12 +9,18 @@ const IntroductionBlock: React.FC<BlockProps> = () => {
   return (
     <div className="introduction-block">
       <h2 className="h1">"Minä oon Anna ja mää tykkään koodata."</h2>
-      <p className="ingress">
-        Olen 35-vuotias, oppimaan innokas koodari Anna ja hurahtanut pahasti
-        myös käytettävyys- ja käyttökokemus-
-        <br />
-        suunnitteluun, saavutettavuuteen ja graafiseen suunnitteluun.
-      </p>
+      <div className="ingress">
+        <p>
+          Olen 35-vuotias, oppimaan innokas koodari Anna, eikä tässä vielä
+          kaikki.
+        </p>
+
+        <p>
+          Vuosien aikana olen kerryttänyt kokemusta laajasti eri osa-alueista
+          ohjelmistokehityksen parissa. Kuvailenkin usein itseäni sanomalla,
+          että on laajasti kiinnostunut eri asioista.
+        </p>
+      </div>
       <p>
         Tämä porfolio on edelleen hyvin keskeneräinen, mutta kehitän sitä
         eteenpäin aina kun ehdin. Tarkoitukseni on koota tänne esille eri
