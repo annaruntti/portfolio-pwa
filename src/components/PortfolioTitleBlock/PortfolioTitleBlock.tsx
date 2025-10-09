@@ -4,7 +4,7 @@ export default function PortfolioTitleBlock() {
   return (
     <div className="title-block">
       <div className="container">
-        <h2>Portfolio</h2>
+        <h2>Tutustu portfoliooni</h2>
       </div>
     </div>
   );

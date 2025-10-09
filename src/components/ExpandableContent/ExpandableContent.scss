@@ -1,37 +1,54 @@
 .expandable-content {
-  margin-bottom: 2rem;
+  overflow: hidden;
+  transition:
+    max-height 0.3s ease-out,
+    opacity 0.2s ease-out;
 
-  .expandable-header {
+  &.expanded {
+    max-height: 2000px; /* Large enough to accommodate content */
+    opacity: 1;
+  }
+
+  &.collapsed {
+    max-height: 0;
+    opacity: 0;
+  }
+
+  .content-inner {
+    padding-bottom: 1rem;
+  }
+}
+
+.expandable-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+
+  h4 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: 600;
+  }
+
+  button {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    color: #666;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    margin-bottom: 1rem;
+    justify-content: center;
+    transition: transform 0.2s ease;
 
-    h4 {
-      margin: 0;
-      font-size: 24px;
-      font-weight: 600;
+    &:hover {
+      color: #333;
     }
 
-    button {
-      background: none;
-      border: none;
-      padding: 0;
-      cursor: pointer;
-      color: #666;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      transition: transform 0.2s ease;
-
-      &:hover {
-        color: #333;
-      }
-
-      svg {
-        width: 24px;
-        height: 24px;
-      }
+    svg {
+      width: 24px;
+      height: 24px;
     }
   }
 }

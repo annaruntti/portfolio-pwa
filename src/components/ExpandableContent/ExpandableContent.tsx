@@ -1,7 +1,6 @@
 import * as React from "react";
 import ExpandLessIcon from "@mui/icons-material/ExpandLess";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
-import { styled } from "@mui/material/styles";
 import "./ExpandableContent.scss";
 
 interface ExpandableContentProps {
@@ -10,20 +9,13 @@ interface ExpandableContentProps {
   defaultExpanded?: boolean;
 }
 
-const ContentDiv = styled("div")({
-  display: "block",
-});
-
-const HiddenDiv = styled("div")({
-  display: "none",
-});
-
 export const ExpandableContent: React.FC<ExpandableContentProps> = ({
   title,
   children,
   defaultExpanded = false,
 }) => {
   const [isVisible, setIsVisible] = React.useState(defaultExpanded);
+  const contentRef = React.useRef<HTMLDivElement>(null);
 
   const toggleContent = () => {
     setIsVisible(!isVisible);
@@ -45,13 +37,13 @@ export const ExpandableContent: React.FC<ExpandableContentProps> = ({
           </button>
         </div>
       </div>
-      {isVisible ? (
-        <ContentDiv id={`content-${title.toLowerCase().replace(/\s+/g, "-")}`}>
-          {children}
-        </ContentDiv>
-      ) : (
-        <HiddenDiv>{children}</HiddenDiv>
-      )}
+      <div
+        ref={contentRef}
+        className={`expandable-content ${isVisible ? "expanded" : "collapsed"}`}
+        id={`content-${title.toLowerCase().replace(/\s+/g, "-")}`}
+      >
+        <div className="content-inner">{children}</div>
+      </div>
     </div>
   );
 };

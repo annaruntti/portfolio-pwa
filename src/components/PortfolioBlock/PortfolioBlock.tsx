@@ -1,9 +1,12 @@
 import * as React from "react";
 import PortfolioImage from "../../images/art.png";
 import { Link } from "react-router-dom";
+import { useScrollAnimation } from "../../hooks/useScrollAnimation";
 import "./PortfolioBlock.scss";
 
 export default function PortfolioBlock() {
+  const { ref: imageRef, isVisible } = useScrollAnimation({ threshold: 0.2 });
+
   return (
     <div className="portfolio-block">
       <div className="container">
@@ -21,7 +24,12 @@ export default function PortfolioBlock() {
           </div>
           <div className="flex-right">
             <div className="image-area">
-              <img className="portfolio-image" src={PortfolioImage} alt="" />
+              <img
+                ref={imageRef as React.RefObject<HTMLImageElement>}
+                className={`portfolio-image ${isVisible ? "animate-in" : ""}`}
+                src={PortfolioImage}
+                alt=""
+              />
             </div>
           </div>
         </div>

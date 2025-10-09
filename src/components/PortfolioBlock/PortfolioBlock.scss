@@ -19,6 +19,14 @@
 .portfolio-image {
   width: 60%;
   position: relative;
+  opacity: 0;
+  transform: translateX(30px) scale(0.95);
+  transition: all 0.8s ease-out;
+}
+
+.portfolio-image.animate-in {
+  opacity: 1;
+  transform: translateX(0) scale(1);
 }
 
 .portfolio-btn {
@@ -57,6 +65,7 @@
 
   .portfolio-block .flex-row {
     display: flex;
+    margin-bottom: 3rem;
   }
 
   .portfolio-block .flex-right {

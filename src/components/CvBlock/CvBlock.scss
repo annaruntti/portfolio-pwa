@@ -18,6 +18,14 @@
   width: 83%;
   top: -5px;
   position: relative;
+  opacity: 0;
+  transform: translateY(30px) scale(0.95);
+  transition: all 0.8s ease-out;
+}
+
+.cv-image.animate-in {
+  opacity: 1;
+  transform: translateY(0) scale(1);
 }
 
 .cv-title {
@@ -56,6 +64,7 @@
   .cv-block .flex-row {
     display: flex;
     padding-right: 1.5rem;
+    margin-bottom: 3rem;
   }
 
   .cv-block {
@@ -83,5 +92,9 @@
     top: 17px;
     padding: 0 0 2rem 2rem;
     position: relative;
+  }
+
+  .cv-image.animate-in {
+    transform: translateY(0) scale(1);
   }
 }

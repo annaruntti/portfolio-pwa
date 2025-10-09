@@ -4,7 +4,7 @@ export default function ContactTitleBlock() {
   return (
     <div className="contact-title-block">
       <div className="container">
-        <h2>Yhteystiedot</h2>
+        <h2>Ota yhteyttä</h2>
       </div>
     </div>
   );

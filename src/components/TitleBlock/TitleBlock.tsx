@@ -4,7 +4,7 @@ export default function TitleBlock() {
   return (
     <div className="title-block">
       <div className="container">
-        <h2>Ansioluettelo</h2>
+        <h2>Tutustu ansioluettelooni</h2>
       </div>
     </div>
   );

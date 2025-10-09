@@ -1,9 +1,12 @@
 import CvImage from "../../images/work.png";
 import { Link } from "react-router-dom";
 import IntroductionBlock from "../IntroductionBlock/IntroductionBlock";
+import { useScrollAnimation } from "../../hooks/useScrollAnimation";
 import "./CvBlock.scss";
 
 export default function CvBlock() {
+  const { ref: imageRef, isVisible } = useScrollAnimation({ threshold: 0.2 });
+
   return (
     <div className="cv-block">
       <div className="container">
@@ -23,7 +26,12 @@ export default function CvBlock() {
           </div>
           <div className="flex-right">
             <div className="image-area">
-              <img className="cv-image" src={CvImage} alt="" />
+              <img
+                ref={imageRef as React.RefObject<HTMLImageElement>}
+                className={`cv-image ${isVisible ? "animate-in" : ""}`}
+                src={CvImage}
+                alt=""
+              />
             </div>
           </div>
         </div>
