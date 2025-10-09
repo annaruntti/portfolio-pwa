@@ -1,11 +1,13 @@
 [build]
   publish = "build"
-  command = "npm ci && npm run build"
+  command = "npm ci --legacy-peer-deps && CI=false npm run build"
 
 [build.environment]
   NODE_VERSION = "18.19.0"
   NPM_VERSION = "10"
-  NODE_OPTIONS = "--openssl-legacy-provider"
+  NODE_OPTIONS = "--openssl-legacy-provider --max-old-space-size=4096"
+  CI = "false"
+  GENERATE_SOURCEMAP = "false"
 
 [[redirects]]
   from = "/*"
