@@ -10,9 +10,23 @@ export default function CvContentWork() {
         Työkokemus
       </h2>
 
+       <article className="work-experience">
+        <h4>
+          Digia Oyj 11/2025-nykyhetki, Lead Software Developer
+        </h4>
+        <p>
+          Työskentely konsultoivana mobiili- ja full-stack web-kehittäjänä. Toimin asiakkuudessamme oman sisäisen tiimimme lead-kehittäjänä.
+          Asiakkuudessamme vastaamme julkisomisteisen organisaation mobiili- ja web-palveluista. Oma roolini on keskittynyt erityisesti mobiilikehitykseen React Nativella, sekä mobiilisovelluksiemme back-endin kehittämiseen Node.js:llä. Vastaan myös asiakkaamme palvelujen tietoturvasta ja saavutettavuudesta.
+          Lead-roolissani toimin tiiviissä yhteistyössä asiakkaamme kanssa, ja olen vastuussa tiimini työskentelyn koordinoinnista, sekä teknisistä ratkaisuista. Mentoroin tiimini jäseniä ja vastaan myös uusien projektien teknisestä suunnittelusta, teknologiavalinnoista, sekä arkkitehtuurin suunnittelusta toisen arkkitehdin kanssa.
+          Olen ollut myös mukana tuomassa AI-avustettua ohjelmistokehitystä osaksi tiimimme työskentelyä, sekä konsultoinut asiakastamme AI:n käyttöön liittyvissä töissä.
+          Käyttämiäni teknologioita ovat olleet mm. Next.js, React.js, React Native, Redux.js,
+          TypeScript, Node.js, GraphQL, Contentful, Azure, Azure Cosmos DB, GitHub Copilot.
+        </p>
+      </article>
+
       <article className="work-experience">
         <h4>
-          Siili Solutions Oyj 01/2025-nykyhetki, Team Lead & Senior Full-Stack
+          Siili Solutions Oyj 01/2025-11/2025, Team Lead & Senior Full-Stack
           Developer
         </h4>
         <p>
