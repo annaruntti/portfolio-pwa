@@ -2,9 +2,9 @@
 
 A modern, responsive portfolio website showcasing web development projects, design work, and professional experience. Built with React and TypeScript, featuring a clean and accessible design.
 
-🌐 **Live Site**: [anna.tiala.fi](http://anna.tiala.fi/)
+ **Live Site**: [anna.tiala.fi](http://anna.tiala.fi/)
 
-## ✨ Features
+## Features
 
 - **Responsive Design**: Optimized for desktop, tablet, and mobile devices
 - **Multi-section Portfolio**:
@@ -16,7 +16,7 @@ A modern, responsive portfolio website showcasing web development projects, desi
 - **Accessibility**: WCAG 2.1 AA compliant design
 - **Modern UI**: Clean, professional design with smooth animations
 
-## 🛠 Tech Stack
+## Tech Stack
 
 - **Frontend**: React 18 with TypeScript
 - **Styling**: SCSS with modular component-based architecture
@@ -27,7 +27,7 @@ A modern, responsive portfolio website showcasing web development projects, desi
 - **Build Tools**: Create React App with Vite configuration
 - **Development Tools**: Storybook for component development
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 src/
@@ -43,7 +43,7 @@ src/
 └── types/               # TypeScript type definitions
 ```
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 
@@ -56,7 +56,7 @@ src/
 
    ```bash
    git clone https://github.com/annaruntti/portfolio2.1.git
-   cd portfolio2.1
+   cd portfolio-pwa
    ```
 
 2. **Install dependencies**
@@ -76,7 +76,7 @@ src/
 
 The app will automatically reload when you make changes, and lint errors will appear in the console.
 
-## 📜 Available Scripts
+## Available Scripts
 
 | Command                   | Description                      |
 | ------------------------- | -------------------------------- |
@@ -86,7 +86,7 @@ The app will automatically reload when you make changes, and lint errors will ap
 | `npm run storybook`       | Starts Storybook on port 9009    |
 | `npm run build-storybook` | Builds Storybook for production  |
 
-## 🎨 Component Architecture
+## Component Architecture
 
 The project uses a modular component architecture where each component has its own folder containing:
 
@@ -102,11 +102,11 @@ The project uses a modular component architecture where each component has its o
 - **ContactArea**: Contact form and social links
 - **ExpandableContent**: Reusable accordion-style content blocks
 
-## 🌐 Deployment
+## Deployment
 
 The site is deployed at [anna.tiala.fi](http://anna.tiala.fi/) and automatically updates from the main branch.
 
-## 🔧 Development
+## Development
 
 ### Node Version Management
 
@@ -147,18 +147,18 @@ The project uses:
 - **ESLint** for code linting
 - **TypeScript** for type safety
 
-## 📱 Browser Support
+## Browser Support
 
 - Chrome (latest)
 - Firefox (latest)
 - Safari (latest)
 - Edge (latest)
 
-## 📄 License
+## License
 
 This project is private and proprietary.
 
-## 👤 Author
+## Author
 
 **Anna Tiala**
 
@@ -169,4 +169,3 @@ This project is private and proprietary.
 
 ---
 
-Built with ❤️ using React and TypeScript
