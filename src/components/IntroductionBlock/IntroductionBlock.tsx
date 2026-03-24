@@ -1,17 +1,27 @@
 import * as React from "react";
 import "./IntroductionBlock.scss";
 
-interface BlockProps {
-  // id: string;
-}
+const calculateAge = (birthDate: Date): number => {
+  const today = new Date();
+  let age = today.getFullYear() - birthDate.getFullYear();
+  const monthDiff = today.getMonth() - birthDate.getMonth();
+  
+  if (monthDiff < 0 || (monthDiff === 0 && today.getDate() < birthDate.getDate())) {
+    age--;
+  }
+  
+  return age;
+};
 
-const IntroductionBlock: React.FC<BlockProps> = () => {
+const IntroductionBlock: React.FC = () => {
+  const age = calculateAge(new Date(1990, 3, 6)); // Month is 0-indexed, so April is 3
+
   return (
     <div className="introduction-block">
       <h2 className="h1">"Minä oon Anna ja mää tykkään koodata."</h2>
       <div className="ingress">
         <p>
-          Olen 35-vuotias, oppimaan innokas koodari Anna, eikä tässä vielä
+          Olen {age}-vuotias, oppimaan innokas koodari Anna, eikä tässä vielä
           kaikki.
         </p>
 
