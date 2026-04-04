@@ -1,11 +1,11 @@
 [build]
   publish = "build"
-  command = "npm ci --legacy-peer-deps && CI=false npm run build"
+  command = "npm install --legacy-peer-deps && npm run build"
 
 [build.environment]
-  NODE_VERSION = "18.19.0"
+  NODE_VERSION = "24"
   NPM_VERSION = "10"
-  NODE_OPTIONS = "--openssl-legacy-provider --max-old-space-size=4096"
+  NODE_OPTIONS = "--max-old-space-size=4096"
   CI = "false"
   GENERATE_SOURCEMAP = "false"
 
