@@ -5,12 +5,10 @@
     opacity 0.2s ease-out;
 
   &.expanded {
-    max-height: 2000px; /* Large enough to accommodate content */
     opacity: 1;
   }
 
   &.collapsed {
-    max-height: 0;
     opacity: 0;
   }
 

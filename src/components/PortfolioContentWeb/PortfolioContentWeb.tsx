@@ -19,6 +19,12 @@ export default function PortfolioContentWeb() {
       <div className="project-box">
         <div className="row">
           <div className="text-introduction">
+            <h4>Lukuisia web-projekteja ja mobiilisovelluksia</h4>
+            <p>
+              Työni lisäksi, olen kehittänyt vapaa-ajalla useita web-projekteja ja mobiilisovelluksia.
+              Projekteissa on käytetty erilaisia teknologioita ja
+              kehitysympäristöjä. Täällä esitellyt projektit ovat hyvin vanhoja, esittelen uudemmat projektini myöhemmin. Sitä ennen voit tutustua kaikkiin avoimiin GitHub-projekteihini täältä: <a className="link" href="https://github.com/annaruntti">GitHub</a>. Useat projektini ovat myös livenä netissä, joten niitä pääsee katselemaan helposti. Tutustu esimerkiksi kennelini nettisivuun: <a className="link" href="https://hallakedon.fi/">Hallakedon kennel</a> sekä mobiiliprojektiini Arkiapuriin liittyvään esittelysivuun <a className="link" href="https://arkiapuri.fi/">Arkiapuri</a>.
+            </p>
             <h4>Vanha web-portfolioni</h4>
             <p>
               Minulla oli tätä projektiani ennen myös vanha web-portfolio, jota
@@ -45,11 +51,13 @@ export default function PortfolioContentWeb() {
               <br />
               Vanha portfolioni on edelleen julki vaikka en ole kehittänyt sitä
               enää vuosiin. Se löytyy{" "}
-              <a href="https://anna.suomenlapinkoira.net/">
+              <a className="link" href="https://anna.suomenlapinkoira.net/">
                 tästä osoitteesta
               </a>{" "}
               ja koodit löytyvät{" "}
-              <a href="https://github.com/annaruntti/portfolio">GitHubista</a>
+              <a className="link" href="https://github.com/annaruntti/portfolio">
+                GitHubista
+              </a>
             </p>
           </div>
         </div>
@@ -105,9 +113,16 @@ export default function PortfolioContentWeb() {
               Pentula ei ole tällä hetkellä vielä julki, mutta sitä voi
               pyörittää koneella lokaalisti. Projektin front-end app löytyy
               GitHubista{" "}
-              <a href="https://github.com/annaruntti/pentula">täältä</a> ja
-              back-end API{" "}
-              <a href="https://github.com/annaruntti/pentula-api">täältä.</a>
+              <a className="link" href="https://github.com/annaruntti/pentula">
+                täältä
+              </a>{" "}
+              ja back-end API{" "}
+              <a
+                className="link"
+                href="https://github.com/annaruntti/pentula-api"
+              >
+                täältä.
+              </a>
               <br />
               <br />
               Pentulassa käytetyt teknologiat:
